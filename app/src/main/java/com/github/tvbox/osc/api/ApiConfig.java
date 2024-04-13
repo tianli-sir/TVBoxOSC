@@ -79,7 +79,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://cf.weixine.net/api.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://pandown.pro/tvbox/tvbox.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
